@@ -1,0 +1,140 @@
+<!--
+Arquivo 1: index.html
+Arquivo 2: styles.css (salvar separadamente)
+
+Copie index.html e styles.css em uma mesma pasta. index.html já referencia styles.css.
+-->
+
+<!-- ===== index.html ===== -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio — Programador Aprendiz</title>
+  <meta name="description" content="Portfólio de Programador Aprendiz — projetos, competências e contacto.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Nome Sobrenome</h1>
+        <p class="muted">Programador Aprendiz • Desenvolvimento de Software</p>
+      </div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="cta">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Construindo soluções simples e funcionais</h2>
+          <p>Programador Aprendiz com foco em desenvolvimento web, lógica de programação e resolução de problemas. Busco aplicar conhecimentos em projetos reais e colaborar com equipes para entregar software de qualidade.</p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <ul class="card-list">
+            <li><strong>Função:</strong> Programador Aprendiz</li>
+            <li><strong>Local:</strong> Lisboa, Portugal</li>
+            <li><strong>Disponibilidade:</strong> Estágio / Júnior</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about container" id="sobre">
+      <h3>Sobre</h3>
+      <p>Sou um profissional em início de carreira com dedicação ao aprendizado contínuo. Tenho experiência em criar páginas web responsivas, resolver problemas através de lógica e colaborar efetivamente com colegas de equipe. Interesse em projetos que possibilitem crescimento técnico e impacto real.</p>
+    </section>
+
+    <section class="skills" id="habilidades">
+      <div class="container">
+        <h3>Competências</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>Programação</h4>
+            <p>HTML, CSS, JavaScript, Python</p>
+          </div>
+          <div class="skill">
+            <h4>Pensamento</h4>
+            <p>Resolução de problemas e pensamento analítico</p>
+          </div>
+          <div class="skill">
+            <h4>Colaboração</h4>
+            <p>Trabalho cooperativo, boa comunicação e produtividade</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects container" id="projetos">
+      <h3>Projetos</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4>Projeto 1 — Página Responsiva</h4>
+          <p>Landing page responsiva criada com HTML e CSS, com foco em acessibilidade e performance.</p>
+          <a href="#" class="project-link">Ver código</a>
+        </article>
+        <article class="project-card">
+          <h4>Projeto 2 — ToDo App (JS)</h4>
+          <p>Aplicação simples para gerir tarefas com JavaScript e armazenamento local.</p>
+          <a href="#" class="project-link">Ver código</a>
+        </article>
+        <article class="project-card">
+          <h4>Projeto 3 — Script em Python</h4>
+          <p>Script para processamento básico de dados e automação de tarefas repetitivas.</p>
+          <a href="#" class="project-link">Ver código</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact container" id="contato">
+      <h3>Contato</h3>
+      <p>Interessado em colaborar? Envie-me uma mensagem:</p>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          <span>Nome</span>
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="seu@exemplo.com" required>
+        </label>
+        <label>
+          <span>Mensagem</span>
+          <textarea name="mensagem" rows="4" placeholder="Escreva aqui..." required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nome Sobrenome — Programador Aprendiz</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/leandro-rodrigues-071186386/">LinkedIn</a>
+        <a href="https://github.com/Leandro-DevPT">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza o ano do rodapé automaticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
