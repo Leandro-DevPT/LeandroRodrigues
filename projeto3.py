@@ -28,7 +28,7 @@ def home():
 
             result = resumo
 
-    return render_template("index.html", result=result)
+    return render_template("templates/index1.html", result=result)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
